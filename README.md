@@ -26,6 +26,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Json Serevr
+## Json Server
 
 To run Json server [Being used for providing mock data] run `npm start json:server` command.
+
+## Mock Login Credentials
+
+To run Application after cloning use mock credentials given below:
+userid: `tom11111`
+paswsord: `password`
