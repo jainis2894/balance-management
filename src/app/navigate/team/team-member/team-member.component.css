@@ -1,0 +1,28 @@
+
+
+  hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+
+  .selectedPic {
+    display: block;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+  }
+
+  .alignment{
+      text-align: center;
+  }
+
+  
+
+  

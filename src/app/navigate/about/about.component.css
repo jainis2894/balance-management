@@ -1,0 +1,10 @@
+.image {
+    display: block;
+    max-width: 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-style: solid;
+    border-color: grey;
+  }

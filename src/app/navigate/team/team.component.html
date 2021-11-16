@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col">
+    <H2>Meet the Team</H2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr />
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-auto">
+    <div
+      class="row userList"
+      *ngFor="let item of userList"
+      (click)="onSelectUser(item)"
+    >
+      <div class="col-2">
+        <img class="pic" src="{{ item.profile }}" />
+      </div>
+      <div class="col">
+        <h5>{{ item.name }}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-auto col-sm-6">
+    <div *ngIf="selectedUser">
+      <app-team-member [selectedUser]="selectedUser"></app-team-member>
+    </div>
+  </div>
+</div>

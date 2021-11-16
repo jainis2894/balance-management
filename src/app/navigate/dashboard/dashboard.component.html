@@ -1,0 +1,73 @@
+<div class="row">
+  <div class="col-lg-2 col-4 col-sm-2">
+    <img
+      class="img-fluid border border-secondary"
+      src="{{ userData.profile }}"
+    />
+  </div>
+  <div class="col-lg col">
+    <h4>Welcome {{ userData.name }}</h4>
+    <h6>
+      <i>{{ userData.last_login | date: "medium" }}</i>
+    </h6>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr />
+  </div>
+</div>
+<div class="row account">
+  <div class="col">
+    <b> Acount Balance: {{ userData.balance }} </b>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of userData.transaction">
+          <td>{{ item.date | date }}</td>
+          <td>{{ item.desc }}</td>
+          <td>{{ item.amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr />
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h4>Subscribe to Alerts</h4>
+    <div class="form-check" *ngFor="let choice of alerts; let i = index">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        [value]="choice.description"
+        [id]="choice.value"
+        (change)="onCheckChange(choice.description)"
+      />
+      <label class="form-check-label">
+        {{ choice.description }}
+      </label>
+    </div>
+    <br />
+    <a href="#" class="btn btn-primary" (click)="onClickAlert()">Submit</a>
+  </div>
+  <div class="col">
+    <h4>Two Way Data Binding</h4>
+    <input type="text" class="form-control" [(ngModel)]="input" />
+    <h4>{{ input }}</h4>
+  </div>
+</div>

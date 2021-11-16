@@ -1,0 +1,49 @@
+
+.header {
+  background-color: #cc0000;
+  padding: 20px;
+  color: white;
+}
+
+.nav-item2{
+  font-family: Microsoft JhengHei, arial;
+  font-weight: bold;
+  font-size: 28px;
+  color: #CC0000;
+  
+}
+
+.custom-nav {
+  background-color: white;
+  padding: 20px;
+}
+
+.welcome{
+  width: 688px;
+  height: auto;
+  background-color: #F2F2F2;
+  padding:20px;
+  margin-left:20px;
+  
+}
+
+
+.avator-img{
+  border-style: solid;
+  border-color: grey;
+}
+
+hr{
+  margin-top:15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.active-link{
+  color: #666666
+}
+
+.basefont{
+  font-family: Microsoft JhengHei, arial;
+}

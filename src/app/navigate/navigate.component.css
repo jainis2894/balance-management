@@ -1,0 +1,68 @@
+.header {
+    background-color: #cc0000;
+    padding: 20px;
+    color: white;
+  }
+
+  .menu-item{
+    font-family: Microsoft JhengHei, arial;
+    font-weight: bold;
+    font-size: 28px;
+    color: #CC0000;
+    
+  }
+
+  .custom-nav {
+     background-color: white; 
+    padding: 20px;
+  }
+
+
+  .avator-img{
+    border-style: solid;
+    border-color: grey;
+  }
+
+  hr{
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #666666;
+  }
+
+  .active-link{
+    color: #666666
+  }
+
+  .colspacing{
+    margin-left: 20px;
+  }
+
+  
+  .hr-display{
+    display :block;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .menu-item {
+      font-size: medium
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .menu-item {
+      font-size: small
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .colspacing {
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    .hr-display{
+      /* opacity: 0.0; */
+      display:none
+    }
+
+  }

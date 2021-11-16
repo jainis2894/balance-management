@@ -1,0 +1,24 @@
+.header {
+  background-color: #cc0000;
+  padding: 20px;
+  color: white;
+}
+.submit {
+  background-color: #cc9900;
+  border-color: #775900;
+  color: #fff;
+}
+
+.error {
+  color: white;
+  font-style: italic;
+}
+
+.bg-white{
+background-color: white;
+}
+
+.content-margin{
+  margin-top: 5px;
+}
+

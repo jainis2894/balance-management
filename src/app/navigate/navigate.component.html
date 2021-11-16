@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-3 header">
+      <h4>Angular JS</h4>
+      <h2>iJavaScript</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="
+        col col-xl-3
+        custom-nav
+        d-flex
+        justify-content-center d-xl-flex align-items-xl-start
+      "
+    >
+      <nav
+        class="
+          navbar navbar-expand
+          flex-xl-column flex-row
+          align-items
+          xl-start
+        "
+      >
+        <div class="collapse navbar-collapse">
+          <ul
+            class="flex-xl-column flex-row navbar-nav justify-content-between"
+          >
+            <li class="menu-item">
+              <a
+                class="nav-link menu-item"
+                routerLink="dashboard"
+                routerLinkActive="active-link"
+                >DASHBOARD</a
+              >
+              <hr class="hr-display" />
+            </li>
+            <li class="menu-item">
+              <a
+                class="nav-link menu-item"
+                routerLink="about"
+                routerLinkActive="active-link"
+                >ABOUT</a
+              >
+              <hr class="hr-display" />
+            </li>
+            <li class="menu-item">
+              <a
+                class="nav-link menu-item"
+                routerLink="team"
+                routerLinkActive="active-link"
+                >TEAM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- <div class="col-1"></div>  -->
+    <div class="w-100 d-block d-xl-none"></div>
+    <div class="col col-xl custom-nav colspacing">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
